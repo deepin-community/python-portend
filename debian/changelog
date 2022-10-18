@@ -1,0 +1,59 @@
+python-portend (3.0.0-1) unstable; urgency=medium
+
+  * New upstream version 3.0.0
+
+ -- Jeroen Ploemen <jcfp@debian.org>  Thu, 11 Nov 2021 18:35:23 +0000
+
+python-portend (2.7.1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Copyright: use my debian.org email address.
+  * Bump Standards-Version to 4.6.0 (from 4.5.1; no further changes).
+
+ -- Jeroen Ploemen <jcfp@debian.org>  Thu, 19 Aug 2021 10:40:19 +0000
+
+python-portend (2.7.1-1) experimental; urgency=low
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Jeroen Ploemen ]
+  * New upstream release.
+  * Watch: use generic github stanza.
+  * Set maintainer to my debian.org email address.
+  * Control:
+    + set Rules-Requires-Root: no.
+    + bump compat level to 13 (from 12; no further changes).
+    + bump Standards-Version to 4.5.1 (from 4.4.1; no further changes).
+  * Rules: cleanup, rename dh --buildsystem option.
+  * Patches: remove, no longer needed.
+  * Watch: bump version to 4.
+  * Copyright: bump years for upstream and packaging.
+
+ -- Jeroen Ploemen <jcfp@debian.org>  Wed, 07 Jul 2021 12:43:17 +0000
+
+python-portend (2.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Clean: add entry to ensure building twice works.
+  * Rules: run tests during build.
+  * Control: add build-dep on python3-pytest, needed by tests.
+  * Patches: add 01_adjust_pytest_options.
+  * Tests: add upstream-tests as autopkgtest, replacing the trivial
+    autopkgtest-pkg-python.
+
+ -- JCF Ploemen (jcfp) <linux@jcf.pm>  Mon, 25 Nov 2019 20:23:57 +0000
+
+python-portend (2.5-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #941491)
+
+ -- JCF Ploemen (jcfp) <linux@jcf.pm>  Fri, 04 Oct 2019 10:53:52 +0000

@@ -1,0 +1,27 @@
+Source: python-portend
+Homepage: https://github.com/jaraco/portend
+Section: python
+Priority: optional
+Maintainer: Jeroen Ploemen <jcfp@debian.org>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-pytest <!nocheck>,
+ python3-setuptools,
+ python3-setuptools-scm,
+ python3-tempora <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-portend.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-portend
+Rules-Requires-Root: no
+
+Package: python3-portend
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python module to monitor TCP port states
+ Portend is a module to monitor TCP ports for bound or unbound states.
+ It provides routines to wait for a port to become free or occuopied,
+ check the current state of a port, or identify a suitable port
+ available for binding locally.
